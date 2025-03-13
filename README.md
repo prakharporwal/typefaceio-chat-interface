@@ -1,4 +1,11 @@
 # Chat Interface
+
+## Screenshot
+
+[Desktop](./public/desktop-view.png)
+
+[Mobile](./public/mobile-view.png)
+
 ## Assignment
 
 Come help us revolutionize the way people create
@@ -46,5 +53,3 @@ expected.
 - Write a message. click enter on keyboard
 - Long message are text wrapped
 - message list length beyond list leads to scollable area
-
-
