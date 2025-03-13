@@ -1,5 +1,15 @@
 # Chat Interface
 
+# How to run
+- Install the node modules using
+``` npm i ```
+
+- run the app using
+```npm start```
+
+- Go to http://localhost:3000/chatnew to check the experience
+
+
 ## Screenshot
 
 [Desktop](./public/desktop-view.png)
@@ -47,12 +57,3 @@ implement this application, React.js is preferrable.
 - Provide clear instructions on how to run the application
 - Need not write a backend component, so state would be cleared off if page is reloaded, which is
 expected.
-
-# How to run
-- Install the node modules using
-``` npm i ```
-
-- run the app using
-```npm start```
-
-- Go to http://localhost:3000/chatnew to check the experience
