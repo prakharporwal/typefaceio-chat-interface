@@ -2,34 +2,16 @@ import { useState } from "react";
 import { Message } from "../../models/Message";
 import { MessageInput } from "../MessageInput";
 import { ChatMessage } from "../ChatMessage";
+import { useNavigate } from "react-router";
 
 export function ChatList() {
+  const navigate = useNavigate();
   const [messages, setMessages] = useState<Message[]>([
     {
       userId: "typeface.io",
       timestamp: "12:44:52",
-        message: "How are you ?",
+      message: "How are you ? Happy Holi :)",
     },
-    {
-      userId: "typeface.io",
-      timestamp: "12:44:53",
-      message: "I am fine",
-    },
-    {
-      userId: "typeface.io",
-      timestamp: "12:44:52",
-      message: "Who is the user?",
-    },
-    {
-      userId: "typeface.io",
-      timestamp: "12:44:53",
-      message: "typeface. They are hiring!!",
-    },
-    {
-        userId: "typeface.io",
-        timestamp: "12:44:53",
-        message: "BTW. Happy Holi!",
-      },
   ]);
   const appendMessage = (message: Message) => {
     console.log(messages);
@@ -37,8 +19,17 @@ export function ChatList() {
   };
 
   return (
-      <div className="chat">
-    <div className="chat-list">
+    <div className="chat">
+      <div className="new-chat__button">
+        <button
+          onClick={() => {
+            navigate("/chat/new");
+          }}
+        >
+          Create New
+        </button>
+      </div>
+      <div className="chat-list">
         {messages.map((message) => {
           return <ChatMessage message={message} />;
         })}

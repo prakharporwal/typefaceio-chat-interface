@@ -17,17 +17,42 @@
   }
 }
 
+button {
+  padding: 8px 16px;
+  height: 40px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  background: rgb(3, 148, 3);
+  color: white;
+}
+
+button:hover {
+  transform: translate(1px, 1px);
+}
+
+button:hover {
+  transform: translate(1px, 1px);
+  background: rgb(7, 70, 2);
+}
+
 .chat {
   height: 100vh;
   position: relative;
   background-color: #ccc;
+
+  .new-chat__button {
+    position: absolute;
+    right: 8px;
+    top: 6px;
+  }
 }
 
 .chat-list {
   position: absolute;
   box-sizing: border-box;
-  top: 16px;
-  height: 85%;
+  top: 48px;
+  height: 82%;
   width: 100vw;
   overflow-y: auto;
   padding: 8px 16px;
@@ -51,24 +76,5 @@
   input {
     width: 65%;
     padding: 12px 10px;
-  }
-
-  button {
-    padding: 8px 16px;
-    height: 40px;
-    outline: none;
-    border: none;
-    border-radius: 8px;
-    background: rgb(3, 148, 3);
-    color: white;
-  }
-
-  button:hover {
-    transform: translate(1px, 1px);
-  }
-
-  button:hover {
-    transform: translate(1px, 1px);
-    background: rgb(7, 70, 2);
   }
 }
