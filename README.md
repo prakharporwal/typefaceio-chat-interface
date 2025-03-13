@@ -55,4 +55,4 @@ expected.
 - run the app using
 ```npm start```
 
-- Go to http://localhost:3000 to check the experience
+- Go to http://localhost:3000/chatnew to check the experience
